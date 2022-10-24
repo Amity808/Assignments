@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+}
+
+.nav-bar {
+    text-align: center;
+    margin-top: 100px;
+    
+}
+
+.nav-bar a{
+  text-decoration: none;
+  color: hsl(31, 77%, 52%);
+}
+
+.nav-bar a:hover{
+  opacity: 0.6;
+}
+
+.container {
+    display: flex;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    height: 50vh;
+    padding: 10px 10px;
+    border-radius: 40px;
+    
+
+}
+
+img {
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.heading{
+    color: hsl(0, 0%, 95%);
+    padding: 15px 0 20px 15px;
+    font-weight: 700;
+}
+
+.card-container p{
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 20px 0 20px 15px;
+    font-weight: 400;
+}
+
+#card-1 {
+    background-color: hsl(31, 77%, 52%);
+}
+
+#card-2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#card-3{
+    background-color: hsl(179, 100%, 13%);
+}
+
+.btn {
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px;
+    margin-left: 20px;
+    border-radius: 50px;
+    border-style: none;
+}
+
+@media (max-width: 375px){
+    .container{
+        font-size: 16px;
+        width: 200px;
+        height: 400px;
+        display: block;
+        padding: 5px 5px;
+        justify-content: center;
+        
+    }
+    .heading{
+        /* font-size: 14px; */
+        padding: 10px 0 10px 10px;
+    }
+    .btn{
+        padding: auto;
+        margin-bottom: 10px;
+    }
+}
+
+#card-1 .btn:active{
+    background-color: hsl(31, 77%, 52%);
+    border: 1px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+#card-2 .btn:active{
+    background-color: hsl(179, 100%, 13%);
+    border: 1px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+#card-3 .btn:active{
+    background-color: hsl(179, 100%, 13%);
+    border: 1px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
