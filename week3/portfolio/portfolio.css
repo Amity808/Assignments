@@ -1,0 +1,263 @@
+*{
+    margin:0;
+    padding: 0;
+    
+}
+
+:root {
+    /* nav \bar */
+    --bg-nav: #444358;
+    --he-nav: 50px;
+
+    /* top */
+    /* --bgcover: url('https://images.freeimages.com/images/large-previews/572/light-effect-1146280.jpg') */
+
+    /* topleft */
+    --h-font-s: 15px;
+    --bol-siz: 1.5rem;
+    --bg-siz-col: #444358;
+    --color: white;
+    --bor-ra: 1rem;
+    --bor-ri: 15px;
+    --bor-le: 2px;
+    --dis-top: grid;
+    --rowg: 15px;
+    --top-wid: 350px;
+    --toppad: 20px;
+    --topfont: 10px;
+    --topdis: flex;
+    --topright: right;
+
+    /* top btn */
+    --topbtn-pad: 3px;
+    --topbtn-bor: 4px;
+    --topwid-img: 250px;
+    --toppad-img: 2rem 2rem;
+    --toprad-img: 50%;
+    
+    
+}
+
+.top {
+    background-image: url('https://images.freeimages.com/images/large-previews/6d5/lake-at-the-cottage-1372381.jpg');
+    background-repeat: no-repeat;
+    display: flex;
+    height: 350px;
+    
+
+    
+    
+}
+
+.top-right {
+  
+  margin-left: auto;
+  /* order: 2; */
+  width: var(--topwid-img);
+  
+}
+
+
+.top-right img{
+  border-radius: var(--toprad-img);
+  border-color: var(--color);
+  padding: var(--toppad-img);
+  margin-top: 50px;
+  
+}
+
+.top button {
+  padding: var(--topbtn-pad);
+  border: none;
+  border-radius: var(--topbtn-bor);
+  background-color: var(--bg-siz-col);
+  color: var(--color);
+}
+
+.top-left {
+    font-size: var(--h-font-s);
+    width: var(--top-wid);
+    padding: var(--toppad);
+    
+    display: var(--dis-top);
+    row-gap: var(--rowg);
+    font-weight: 300;
+    word-wrap: normal;
+    color: var(--color);
+    
+
+
+}
+
+
+.name {
+    font-size: var(--bol-siz);
+    background-color: var(--bg-siz-col);
+    color: var(--color);
+    border-radius: var(--bor-ra);
+    padding: 10px 5px 5px 0;
+    text-align: center;
+    
+    
+}
+
+
+body {
+  background-color: #444358;
+    
+}
+
+.nav-bar{
+    background-color: var(--bg-nav);
+    /* padding: 14PX 16px; */
+    height: var(--he-nav);
+    
+    
+
+}
+
+.nav-bar a {
+    text-decoration: none;
+    float: left;
+    /* text-align: center; */
+    padding: 14px 16px;
+    font-size: 17px;
+    color: #f2f2f2;
+    
+
+}
+
+.float {
+    /* margin-left: 110px; */
+    float: right;
+    text-align: center;
+    justify-content: center;
+    padding: 0 10px;
+
+    
+}
+
+
+
+/* About me */
+
+#about-me {
+  /* width: 700px; */
+  align-items: center;
+  color: var(--color);
+  text-align: center;
+  word-wrap: break-word;
+  justify-content: center;
+  padding-top: 55px;
+  white-space: 2px;
+  font-size: 1.2rem;
+}
+
+
+/* my services */
+
+.myservice {
+  
+  column-gap: 30px;
+  padding: 30px;
+  /* display: -webkit-flex; */
+  display: flex;
+  justify-content: center;
+  
+}
+
+.box {
+  background-color: var(--color);
+  justify-content: center;
+  text-align:center;
+  width: 200px;
+  height: 270px;
+  color: var(--bg-siz-col);
+
+}
+
+.box a {
+  text-decoration: none;
+  /* color: var(--bg-siz-col); */
+}
+
+.reactimg{
+  padding-top: 55px;
+}
+
+.box a:hover{
+  color: #2c6624;
+}
+
+.box img{
+  justify-content: center;
+  padding-bottom: 13px;
+}
+
+/* project */
+.projects {
+  column-gap: 30px;
+  padding: 30px;
+  /* display: -webkit-flex; */
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.projec-heading {
+  text-align: center;
+  color: var(--color);
+}
+
+.footer {
+  box-sizing: border-box;
+  text-align: center;
+  justify-content: center;
+  background-color: #19192e;
+  padding: 30px 30px;
+}
+
+@media (max-width: 672px){
+    .float {
+        float: none;
+        display: block;
+        font-size: 15px;
+        padding: 0;
+        margin: 0;
+        
+    }
+    
+        
+    }
+
+
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}

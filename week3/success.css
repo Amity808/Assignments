@@ -1,0 +1,114 @@
+
+:root {
+    --bg-color: white;
+    --div-colo: rgb(12, 196, 94);
+    --font: sans-serif;
+
+    /* div containerr */
+    --wid: 350px;
+    --div-h: 350px;
+    --div-pad: 20px;
+    --text-cen: center;
+    --pad-ttop: 3rem;
+    --mar-l: 70vh;
+    --mar-r: 70vh;
+    --mar-top: 70px;
+
+
+    /* p tag */
+    --fontp: 17px;
+    --fw: bold;
+
+/* text a  */
+    --texta: none;
+    --abg-clr: rgb(0, 0, 0);
+
+    /* img */
+    --img: center;
+    --ma-img: 7rem;
+}
+
+div {
+    width: var(--wid);
+    height: var(--div-h);
+    background-color: rgb(94, 114, 106);
+    color: var(--bg-color);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding-top: var(--pad-ttop);
+    text-align: var(--text-cen);
+
+}
+
+/* div {
+    width: var(--wid);
+    background-color: var(--div-colo);
+    height: var(--div-h);
+    padding: var(--div-pad);
+    text-align: var(--text-cen);
+    padding-top: var(--pad-ttop);
+    margin-left: var(--mar-l);
+    margin-right: var(--mar-r);
+    margin-top: var(--mar-top);
+    color: var(--bg-color);
+} */
+
+div p{
+    font-size: var(--fontp);
+    font-weight: var(--fw);
+    
+}
+
+div a {
+    text-decoration: var(--texta);
+    color: var(--abg-clr);
+}
+
+div a:hover{
+    opacity: 0.7;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin-left: var(--ma-img);
+}
+
+
+
+
+
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
